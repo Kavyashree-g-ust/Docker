@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: pact
       POSTGRES_DB: pact
     healthcheck:
-      test: ["CMD-SHELL","pg_isready -U pact -d pact"]
+      test: ["CMD-SHELL", "pg_isready -U pact -d pact"]
       interval: 5s
       timeout: 5s
       retries: 12
